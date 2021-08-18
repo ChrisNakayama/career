@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Language Selector</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div id="the-language">
+      <h1>The Right Language is Everything!</h1>
+
+      <h2>Learn as many languages as you can to win!</h2>
+
+    </div>
+
+    <div id="not-old">
+      <h1>Learn All Languages to be useful!</h1>
+
+      <p>You are not a coding Jedi.</p>
+    </div>
+  </div>
+</body>
+</html>
+  <div class="container" id="Quiz">
+    <form id="intro">
+      <div class="intro">
+        <br>
+        <!-- This header only appears on the intro page. -->
+        <h1>Welcome Future Developer!</h1>
+      </div>
+    </form>
+    <br>
+    <form id="quiz">
+      <div class="quiz">
+        <!-- This header appears when taking the quiz. -->
+        <h2>What language should you learn?</h2>
+        <br>
+        <hr>
+        <br>
+        <label for="jedi"><h3>Q1. Do you want a language you learn fast?</h3></label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jedi" value="1" checked/>
+              Yes! If you said yes, choose Javascript.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jedi" value="2"/>
+              No, I want to take some time. If you choose this option, learn Python.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="jedi" value="3"/>
+              Yes, but I want to learn more than Javascript. If this is your choice, then choose a full stack Ruby program.
+            </label>
+          </div>
+        <label for="spaceships"><h3>Q2. Do you have coding experience?</h3></label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="spaceships" value="1" checked/>
+              No. If you said no, learn HTML CSS and Javascript first.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="spaceships" value="2"/>
+              Yes. If you have experience, choose C# or Ruby.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="spaceships" value="3"/>
+              Yes. If yes, you could also learn Python
+            </label>
+          </div>
+        <br>
+        <label for="planets"><h3>Q3. Where do you live?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="planets" value="1" checked/>
+            Portland. If you live in Portland, choose C# or Ruby.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="planets" value="2"/>
+            Seattle. If you live in Seattle choose C#.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="planets" value="3"/>
+            New York. If you live in New York, choose Python.
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">What coding language is best?</button>
+      </div>
+    </form>
+    <div class="results">
+      <!-- This header only appears on the results page. -->
+      <h3 id="resultheader">All coding languages are useful!...</h3>
+      <div id="C#">
+        <img src="https://codeit.us/storage/Ff63HNqVfNW0aZbdwZ5ThkFx8pY4XBOg0xjOUEf6.jpeg"> alt:"C# is one of the most useful languages."
+        <br>
+        <br>
+        <h5><strong>C#</strong></h5>
+        <p>"Great for any developer"</p>
+      </div>
+      <div id="Ruby">
+        <img src="http://img3.wikia.nocookie.net/__cb20130122221837/logopedia/images/c/c9/Ruby-language.png" alt="Ruby">
+        <br>
+        <br>
+        <h5><strong>Ruby</strong></h5>
+        <p>Front end developers!</p>
+      </div>
+      <div id="python">
+        <img src="http://www.laptoponbudget.com/wp-content/uploads/2019/10/Python-language.png" alt="Python">
+        <br>
+        <br>
+        <h5><strong>Python</strong></h5>
+        <p>Useful across many industries</p>
+      </div>
+      <form id="tryagain">
+        <hr>
+        <label for="tryagain">
+          <button type="submit" class="btn btn-info" name="tryagain">Try again</button>
+        </label>
+      </form>
+    </div>
+  </div>
+</body>
