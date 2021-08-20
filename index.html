@@ -20,7 +20,7 @@
     <div id="not-old">
       <h1>Learn All Languages to be useful!</h1>
 
-      <p>You are not a coding Jedi.</p>
+    
     </div>
   </div>
 </body>
@@ -40,63 +40,100 @@
         <h2>What language should you learn?</h2>
         <br>
         <hr>
-        <br>
-        <label for="jedi"><h3>Q1. Do you want a language you learn fast?</h3></label>
+        <label for="question1"><h3>Q1. Have you coded before?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="1" checked/>
+            Yes! If you said yes, choose Python.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="2"/>
+            No, I have never coded. If you have never coded, choose HTML.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="3"/>
+            Yes, but not much. If this is you, choose a full stack program.
+          </label>
+        </div>
+        <label for="question2"><h3>Q2. Do you want a language you learn fast?</h3></label>
           <div class="radio">
             <label>
-              <input type="radio" name="jedi" value="1" checked/>
+              <input type="radio" name="question2" value="1" checked/>
               Yes! If you said yes, choose Javascript.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="jedi" value="2"/>
+              <input type="radio" name="question2" value="2"/>
               No, I want to take some time. If you choose this option, learn Python.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="jedi" value="3"/>
+              <input type="radio" name="question2" value="3"/>
               Yes, but I want to learn more than Javascript. If this is your choice, then choose a full stack Ruby program.
             </label>
           </div>
-        <label for="spaceships"><h3>Q2. Do you have coding experience?</h3></label>
+        <label for="question3"><h3>Q3. Do you have coding experience?</h3></label>
           <div class="radio">
             <label>
-              <input type="radio" name="spaceships" value="1" checked/>
+              <input type="radio" name="question3" value="1" checked/>
               No. If you said no, learn HTML CSS and Javascript first.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="spaceships" value="2"/>
+              <input type="radio" name="question3" value="2"/>
               Yes. If you have experience, choose C# or Ruby.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="spaceships" value="3"/>
+              <input type="radio" name="question3" value="3"/>
               Yes. If yes, you could also learn Python
             </label>
           </div>
         <br>
-        <label for="planets"><h3>Q3. Where do you live?</h3></label>
+        <label for="question4"><h3>Q4. Where do you live?</h3></label>
         <div class="radio">
           <label>
-            <input type="radio" name="planets" value="1" checked/>
+            <input type="radio" name="question4" value="1" checked/>
             Portland. If you live in Portland, choose C# or Ruby.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="planets" value="2"/>
+            <input type="radio" name="question4" value="2"/>
             Seattle. If you live in Seattle choose C#.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="planets" value="3"/>
+            <input type="radio" name="question4" value="3"/>
             New York. If you live in New York, choose Python.
+          </label>
+        </div>
+        <label for="question5"><h3>Q5. Are you going for a job right away?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="1" checked/>
+            Yes. If this is the case learn a full stack program in Python
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="2"/>
+            No. I would learn several languages in this case.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="3"/>
+            Yes! I would choose Python based on where you are located.
           </label>
         </div>
         <button type="submit" class="btn btn-primary">What coding language is best?</button>
@@ -105,7 +142,7 @@
     <div class="results">
       <!-- This header only appears on the results page. -->
       <h3 id="resultheader">All coding languages are useful!...</h3>
-      <div id="C#">
+      <div id="C">
         <img src="https://codeit.us/storage/Ff63HNqVfNW0aZbdwZ5ThkFx8pY4XBOg0xjOUEf6.jpeg"> alt:"C# is one of the most useful languages."
         <br>
         <br>

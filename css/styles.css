@@ -1,8 +1,8 @@
-#drinks, #not-old {
+#not-old {
   display: none;
 }
 
-.force-hidden {
+.quiz {
   display: show;
 }
 

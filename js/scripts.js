@@ -1,6 +1,4 @@
-function add (answer1,answer2,answer3) {
-  return (answer1 + answer2 + answer3);
-}
+
 
 // When clicking the "Click here to get started!" button, this hides the initial intro page and takes you to the quiz.
 $(document).ready(function() {
@@ -13,28 +11,28 @@ $(document).ready(function() {
   $("form#tryagain").submit(function(event) {
     event.preventDefault();
     $(".quiz").fadeIn();
-    $("#luke, #han, #leia, #tryagain, #resultheader").hide();
+    $("#C, #Ruby, #python, ").hide();
   });
 // Each question has three answers with an independent point value of 1-3 for each of the answers.
 // After, we add the amounts, hide the quiz, then display the character based on the result.
 // A "Try again" button is added to redo the quiz and hide the result, see notes on ln 13.
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    let answer1 = parseInt($("input:radio[name=jedi]:checked").val());
-    let answer2 = parseInt($("input:radio[name=spaceships]:checked").val());
-    let answer3 = parseInt($("input:radio[name=planets]:checked").val());
-    let result = add(answer1, answer2, answer3);
+    let answer1 = parseInt($("input:radio[name=question1]:checked").val());
+    let answer2 = parseInt($("input:radio[name=question2]:checked").val());
+    let answer3 = parseInt($("input:radio[name=question3]:checked").val());
+    let answer4 = parseInt($("input:radio[name=question4]:checked").val());
+    let answer1 = parseInt($("input:radio[name=question5]:checked").val());
+    let result = add(answer1, answer2, answer3, answer4, answer5);
 
-    if (result <= 3) {
-      $("#luke").show();
-    } else if (result > 3 && result <= 7) {
-      $("#han").show();
-    } else if (result > 7) {
-      $("#leia").show();
+    if (result <= 5) {
+      $("#C").show();
+    } else if (result > 3 && result <= 10) {
+      $("#Ruby").show();
+    } else if (result > 10) {
+      $("#Python").show();
     }
     $(".quiz").hide();
-    $("#tryagain").show();
-    $("#resultheader").show();
     $(document).ready(function() {
       
 const age = parseInt(prompt("Are you old enough to code? Are you over 7?"));
