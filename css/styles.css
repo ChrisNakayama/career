@@ -1,16 +1,56 @@
-#not-old {
+body {
+  background-image: url(https://cdn.wallpapersafari.com/10/31/hb7Dvl.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: monospace;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 50vh;
+  height: auto;
+}
+
+h2 {
+  padding-top: 15vh;
+}
+
+button {
+  width: 17vh;
+  height: auto;
+}
+
+.result {
   display: none;
+  padding-bottom: 15vh;
 }
 
-.quiz {
-  display: show;
+.jumbotron {
+  background-color: rgba(155, 224, 126, 0.8);
+  );
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0px;
 }
 
-.clickable {
-  cursor: pointer;
-  color: #0088cc;
+.panel {
+  display: block;
+  background-color: (255, 255, 255, 0.8);
+  color: white;
 }
 
-.clickable:hover {
-  text-decoration: underline;
+.form-group {
+  color: white;
+  border-style: solid;
+  border-color: white;
+  padding: 5vh 5vw;
+  border-radius: 5%;
 }
+
+.formOne {
+  padding-bottom: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
